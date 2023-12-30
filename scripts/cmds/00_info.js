@@ -35,7 +35,7 @@ module.exports = {
           bio: '𝑯𝒂𝒕𝒆𝒓𝒔 𝒂𝒓𝒆 𝒎𝒚 𝒎𝒐𝒕𝒊𝒗𝒂𝒕𝒐𝒓𝒔'
         };
 
-        const videoUrl = 'https://drive.google.com/uc?export=download&id=1uFLIV0C-yqArk-Ne-_4HfWa-KtRw4S7d';
+        const videoUrl = 'https://i.imgur.com/q2Qm0M3.jpg';
         const tmpFolderPath = path.join(__dirname, 'tmp');
 
         if (!fs.existsSync(tmpFolderPath)) {
@@ -43,7 +43,7 @@ module.exports = {
         }
 
         const videoResponse = await axios.get(videoUrl, { responseType: 'arraybuffer' });
-        const videoPath = path.join(tmpFolderPath, 'owner_video.mp4');
+        const videoPath = path.join(tmpFolderPath, 'owner_video.jpg');
 
         fs.writeFileSync(videoPath, Buffer.from(videoResponse.data, 'binary'));
 
