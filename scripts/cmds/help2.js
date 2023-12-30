@@ -3,11 +3,11 @@ const axios = require("axios");
 const path = require("path");
 const { getPrefix } = global.utils;
 const { commands, aliases } = global.GoatBot;
-const doNotDelete = "[ ♥️| 𝙔𝘼𝙕𝙆𝙔 𝘼𝙄 ]"; // changing this wont change the goatbot V2 of list cmd it is just a decoyy
+const doNotDelete = "[ ♥️𝐗-𝐍𝐢𝐥 𝐗𝐡𝐨𝐰𝐝𝐡𝐮𝐫𝐲 𝘼𝙄 ]"; // changing this wont change the goatbot V2 of list cmd it is just a decoyy
 
 module.exports = {
 	config: {
-		name: "help2",
+		name: "help",
 		version: "1.17",
 		author: "NTKhang", // original author Kshitiz 
 		countDown: 5,
@@ -34,8 +34,7 @@ module.exports = {
 			const categories = {};
 			let msg = "";
 
-			msg += `░░░░█▄█ ▄▀█ ▀█ █▄▀ █▄█░░░
-░░░░░█░ █▀█ █▄ █░█ ░█░░░░\n\n◦❭❯❱ 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 & 𝗖𝗔𝗧𝗘𝗚𝗢𝗥𝗬 ❰❮❬◦`; // replace with your name 
+			msg += `𝐗-𝐍𝐢𝐥 𝐗𝐡𝐨𝐰𝐝𝐡𝐮𝐫𝐲\n\n◦❭❯❱ 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 & 𝗖𝗔𝗧𝗘𝗚𝗢𝗥𝗬 ❰❮❬◦`; // replace with your name 
 
 			for (const [name, value] of commands) {
 				if (value.config.role > 1 && role < value.config.role) continue;
@@ -63,32 +62,17 @@ module.exports = {
 			const totalCommands = commands.size;
 			msg += `\n𝗖𝘂𝗿𝗿𝗲𝗻𝘁𝗹𝘆, 𝘁𝗵𝗲 𝗯𝗼𝘁 𝗵𝗮𝘀 ${totalCommands} 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝘁𝗵𝗮𝘁 𝗰𝗮𝗻 𝗯𝗲 𝘂𝘀𝗲𝗱\n`;
 			msg += `𝗧𝘆𝗽𝗲 ${prefix} 𝗵𝗲𝗹𝗽 𝗰𝗺𝗱𝗡𝗮𝗺𝗲 𝘁𝗼 𝘃𝗶𝗲𝘄 𝘁𝗵𝗲 𝗱𝗲𝘁𝗮𝗶𝗹𝘀 𝗼𝗳 𝘁𝗵𝗮𝘁 𝗰𝗼𝗺𝗺𝗮𝗻𝗱\n\n`;
-			msg += `♥️ | GoatBot V2`; // its not decoy so change it if you want 
+			msg += `♥️ X-NiLGOATBOT-V2`; // its not decoy so change it if you want 
 
 			const helpListImages = [
-				'https://i.imgur.com/xyDcrW3.jpeg',
+				'https://i.imgur.com/Tk15nqz.jpg',
 
-				'https://i.imgur.com/wdZLWTU.jpeg',
-
-				'https://i.imgur.com/cJksczg.jpeg',
-
-				'https://i.imgur.com/URCFjrS.jpeg',
-
-				'https://i.imgur.com/iAHVc1a.jpeg',
-													'https://i.imgur.com/OSWG34k.jpeg',
-
-				'https://i.imgur.com/sTHeaMB.jpeg',
-
-				'https://i.imgur.com/6zzEoxf.jpeg',
-
-				'https://i.imgur.com/rDsUmFW.jpeg',
-
-				'https://i.imgur.com/Ew37GbZ.jpeg',
-
-				'https://i.imgur.com/QXnv0P8.jpeg',                                    
-				'https://i.imgur.com/f755v5B.jpeg', 
-
-				'https://i.imgur.com/7g5AKgh.jpeg',
+				'https://i.imgur.com/91G5dlp.jpg',
+        'https://i.imgur.com/PxSc8IR.jpg',
+'https://i.imgur.com/VcXHpTV.jpg',
+'https://i.imgur.com/vIfpMHu.jpg',
+'https://i.imgur.com/jmkz5xz.jpg',
+        
 			];
 
 			const helpListImage = helpListImages[Math.floor(Math.random() * helpListImages.length)];

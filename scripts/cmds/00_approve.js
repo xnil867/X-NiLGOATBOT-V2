@@ -3,7 +3,7 @@ const fs = require("fs");
 module.exports = {
 	config: {
 		name: "approved",
-		author: "Jun",
+		author: "NiL",
 		countDown: 5,
 		role: 0,
 		category: "owner",
@@ -66,11 +66,11 @@ module.exports = {
 				fs.writeFileSync(pendingPath, JSON.stringify(pending, null, 2));
 			}, messageID);
 		} else if(args[0] == "pending") {
-			msg = "DANH SÁCH CÁC BOX CHỜ ĐƯỢC DUYỆT!";
+			msg = "অনুমোদিত বাক্সের তালিকা!";
 			let count = 0;
 
 			for (const e of pending) {
-				const name = (await api.getThreadInfo(e)).name || "Nhóm Chat";
+				const name = (await api.getThreadInfo(e)).name || "চ্যাট গ্রুপ";
 				msg += `${count += 1}. ${name}\ID: ${e}`;
 			}
 

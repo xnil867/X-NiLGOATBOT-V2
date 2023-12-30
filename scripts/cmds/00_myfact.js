@@ -7,7 +7,7 @@ module.exports = {
 		name: "myfact",
 		version: "1.0",
 		author: "Samir",
-		countDown: 35,
+		countDown: 5,
 		role: 0,
 		shortDescription: "Make A Text As Fact",
 		longDescription: "Make A Text As Fact",

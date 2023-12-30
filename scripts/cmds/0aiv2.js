@@ -12,7 +12,7 @@ const typewriterMapping = {
 
 module.exports = {
     config: {
-      name: "ai2",
+      name: "ai",
       author: "Haru",
       version: "69",
       cooldowns: 5,

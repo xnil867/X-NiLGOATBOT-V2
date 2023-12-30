@@ -16,33 +16,32 @@ module.exports = {
  return message.reply({
  body: `
 
+▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 
-██╗░░░██╗░█████╗░███████╗
-╚██╗░██╔╝██╔══██╗╚════██║
-░╚████╔╝░███████║░░███╔═╝
-░░╚██╔╝░░██╔══██║██╔══╝░░
-░░░██║░░░██║░░██║███████╗
-░░░╚═╝░░░╚═╝░░╚═╝╚══════╝
+▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄  █▄▀█▀▄█████░▀██░█▄░▄██░█████
+███░███▄▄██░█░█░██░███░█████
+█▀▄█▄▀█████░██▄░█▀░▀██░▀▀░██
+▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 
-━━━━━━━━━━━━━━━
+▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 
-Hello! It look's like you're not familiar with my prefix!, here's a guide, use this :➡
+𝐇𝐞𝐥𝐥𝐨! 𝐈𝐭 𝐥𝐨𝐨𝐤'𝐬 𝐥𝐢𝐤𝐞 𝐲𝐨𝐮'𝐫𝐞 𝐧𝐨𝐭 𝐟𝐚𝐦𝐢𝐥𝐢𝐚𝐫 𝐰𝐢𝐭𝐡 𝐦𝐲 𝐩𝐫𝐞𝐟𝐢𝐱!, 𝐡𝐞𝐫𝐞'𝐬 𝐚 𝐠𝐮𝐢𝐝𝐞, 𝐮𝐬𝐞 𝐭𝐡𝐢𝐬 :➡
 
-👑 SYSTEM PREFIX:➡【 & 】
-🐰 BOX CHAT PREFIX:➡ 【 & 】
+👑 𝗦𝗬𝗦𝗧𝗘𝗠 𝗣𝗥𝗘𝗙𝗜𝗫:➡【 ${global.GoatBot.config.prefix} 】
+🐰 𝐁𝐎𝐗 𝐂𝐇𝐀𝐓 𝐏𝐑𝐄𝐅𝐈𝐗:➡ 【 ${global.GoatBot.config.prefix} 】
 
 📌 𝗛𝗢𝗪 𝗧𝗢 𝗨𝗦𝗘
-hiro ʜᴏᴡ ᴛᴏ ᴍᴀᴋᴇ ᴄᴀᴋᴇ
-hiro ᴡʜᴀᴛ ᴜs ᴄᴀᴘɪᴛᴀʟ ᴏғ ғʀᴀɴᴄ
+𝐗-𝐍𝐢𝐥 ◉⁠‿⁠◉ ʜᴏᴡ ᴛᴏ ᴍᴀᴋᴇ ᴄᴀᴋᴇ
+𝐗-𝐍𝐢𝐥 ◉⁠‿⁠◉ ᴡʜᴀᴛ ᴜs ᴄᴀᴘɪᴛᴀʟ 
 
 ⚙ 𝗠𝗢𝗥𝗘 𝗢𝗣𝗧𝗜𝗢𝗡𝗦
-➖ ✅ [ -quiz ] 
-➖ 🎰 [ -slot ]
-➖ 🎯 [ -spin ]
-➖ 🏦 [- bank ]
-➖ 📝 [ -bal ]
+➖ ✅ [ ${global.GoatBot.config.prefix}quiz ] 
+➖ 🎰 [ ${global.GoatBot.config.prefix}slot ]
+➖ 🎯 [ ${global.GoatBot.config.prefix}spin ]
+➖ 🏦 [ ${global.GoatBot.config.prefix}bank ]
+➖ 📝 [ ${global.GoatBot.config.prefix}bal ]
 
-OWNER: https://www.facebook.com/swordigo.swordslush`,
+𝐎𝐰𝐧𝐞𝐫 𝐟𝐛 𝐋𝐢𝐧𝐤: ${global.GoatBot.config.OWNERLINK}`,
  attachment: await global.utils.getStreamFromURL("https://i.imgur.com/voEHfHB.gif")
  });
  }

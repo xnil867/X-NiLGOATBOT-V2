@@ -8,7 +8,7 @@ module.exports = {
 	config: {
 		name: 'autofb',
 		version: '1.0',
-		author: 'Kshitiz',
+		author: 'Nil',
 		countDown: 5,
 		role: 0,
 		shortDescription: 'auto video downloader',

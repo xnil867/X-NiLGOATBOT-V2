@@ -1,7 +1,7 @@
 
 module.exports = {
 	config: {
-		name: "ai",
+		name: "ai2",
 		aliases: ["blackbox"],
 		version: "1.0",
 		author: "Samir Œ",
@@ -9,7 +9,7 @@ module.exports = {
 		role: 0,
 		shortDescription: "ai",
 		longDescription: "black box",
-		category: "new ai",
+		category: "No prefix",
 		guide:  {
 			vi: "{pn} text ",
 		    en: "{pn} text"
@@ -18,13 +18,11 @@ module.exports = {
 
 
 
-  onStart: async function ({ api, event, args }) {
-    const axios = require("axios");
+  onStart: async function ({ api, event, args }) { const axios = require("axios");
     const { messageID, threadID, senderID, body } = event;
     const tid = threadID;
     const mid = messageID;
     const q = encodeURIComponent(args.join(" "));
-
     if (!q) {
       return api.sendMessage("[❗] - Missing input", tid, mid);
     }

@@ -16,15 +16,15 @@ config: {
   onStart: async function ({ api, event }) {
   try {
     const ownerInfo = {
-      name: 'Yazky Ai',
+      name: '𝐗-𝐍𝐢𝐥 𝐗𝐡𝐨𝐰𝐝𝐡𝐮𝐫𝐲',
       gender: 'Male',
-      age: 'Unknown',
-      height: 'Unknown',
-      facebookLink: 'stalk moko mwa',
-      nick: 'Yazky'
+      age: '20',
+      height: '5.5',
+      facebookLink: 'https://www.facebook.com/xnilxhowdhury143',
+      nick: '𝐗-𝐍𝐢𝐥 ◉⁠‿⁠◉',
+      birthday: '05/February'
     };
-
-    const bold = 'https://i.imgur.com/DDO686J.mp4'; // Replace with your Google Drive videoid link https://drive.google.com/uc?export=download&id=here put your video id
+    const bold = 'https://i.imgur.com/Tk15nqz.jpg'; // Replace with your Google Drive videoid link https://drive.google.com/uc?export=download&id=here put your video id
 
     const tmpFolderPath = path.join(__dirname, 'tmp');
 
@@ -33,7 +33,7 @@ config: {
     }
 
     const videoResponse = await axios.get(bold, { responseType: 'arraybuffer' });
-    const videoPath = path.join(tmpFolderPath, 'owner_video.mp4');
+    const videoPath = path.join(tmpFolderPath, 'owner_video.jpg');
 
     fs.writeFileSync(videoPath, Buffer.from(videoResponse.data, 'binary'));
 
@@ -45,6 +45,7 @@ Age: ${ownerInfo.age}
 Height: ${ownerInfo.height}
 Facebook: ${ownerInfo.facebookLink}
 Nick: ${ownerInfo.nick}
+Birthday: ${ownerInfo.birthday}
 `;
 
 

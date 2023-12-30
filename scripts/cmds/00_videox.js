@@ -6,7 +6,7 @@ const tinyurl = require('tinyurl');
 
 module.exports = {
 	config: {
-		name: "videox",
+		name: "video",
 		aliases: ["video"],
 		version: "1.3.9",
 		author: "Samir Œ",

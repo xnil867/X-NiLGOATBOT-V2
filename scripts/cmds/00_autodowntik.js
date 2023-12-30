@@ -8,7 +8,7 @@ module.exports = {
 	config: {
 		name: 'autotik',
 		version: '1.0',
-		author: 'Kshitiz', //fixed by cliff
+		author: 'Nil', //fixed by cliff
 		countDown: 5,
 		role: 0,
 		shortDescription: 'auto video downloader',
