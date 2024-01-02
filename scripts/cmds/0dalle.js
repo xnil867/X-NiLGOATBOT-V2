@@ -24,7 +24,7 @@ module.exports = {
 
        const waitingMessage = await message.reply("Processing your request, please wait...");
 
-      const res = await axios.get(`https://www.annie-jarif.repl.co/dalle?prompt=${encodeURIComponent(k)}`);
+      const res = await axios.get(`https://api.vyturex.com/dalle?prompt=${encodeURIComponent(k)}`);
       const data = res.data.data.picUrlList;
       const imgData = [];
 
